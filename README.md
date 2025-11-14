@@ -1,59 +1,174 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# MRCars – Sistema de Venda de Veículos (Laravel)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistema desenvolvido em Laravel para gerenciamento, listagem e administração de veículos automotivos.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Tecnologias Utilizadas
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Laravel 12  
+- PHP 8.2+  
+- Composer  
+- MySQL (phpMyAdmin via XAMPP)  
+- Blade Templates  
+- Bootstrap  
+- Eloquent ORM  
+- Migrations & Seeders  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## ⚙️ Como rodar o projeto
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 1. Clonar o repositório
+git clone https://github.com/miguelabel1968-bot/mrcars-veiculos.git  
+cd mrcars-veiculos
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 2. Instalar dependências
+composer install
 
-## Laravel Sponsors
+### 3. Criar o arquivo .env
+cp .env.example .env
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 4. Configurar o arquivo .env (MySQL via XAMPP)
+DB_CONNECTION=mysql  
+DB_HOST=127.0.0.1  
+DB_PORT=3306  
+DB_DATABASE=trabalho  
+DB_USERNAME=root  
+DB_PASSWORD=
 
-### Premium Partners
+### 5. Gerar a chave da aplicação
+php artisan key:generate
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 6. Migrar e popular o banco
+php artisan migrate --seed
 
-## Contributing
+### 7. Criar o link de armazenamento
+php artisan storage:link
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 8. Rodar o servidor
+php artisan serve
 
-## Code of Conduct
+Acesse: http://127.0.0.1:8000
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🔐 Credenciais do Administrador
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Email: admin@example.com  
+Senha: senha123
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🧭 Como acessar o painel administrativo
+
+URLs úteis:
+
+- Criar modelo: http://127.0.0.1:8000/admin/car-models/create  
+- Criar marca: http://127.0.0.1:8000/admin/brands/create  
+- Painel veículos: http://127.0.0.1:8000/admin/vehicles  
+
+---
+
+## 🖼️ Prints do Sistema
+
+As imagens estão na pasta `/prints` do repositório:
+
+- # MRCars – Sistema de Venda de Veículos (Laravel)
+
+Sistema desenvolvido em Laravel para gerenciamento, listagem e administração de veículos automotivos.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- Laravel 12  
+- PHP 8.2+  
+- Composer  
+- MySQL (phpMyAdmin via XAMPP)  
+- Blade Templates  
+- Bootstrap  
+- Eloquent ORM  
+- Migrations & Seeders  
+
+---
+
+## ⚙️ Como rodar o projeto
+
+### 1. Clonar o repositório
+git clone https://github.com/miguelabel1968-bot/mrcars-veiculos.git  
+cd mrcars-veiculos
+
+### 2. Instalar dependências
+composer install
+
+### 3. Criar o arquivo .env
+cp .env.example .env
+
+### 4. Configurar o arquivo .env (MySQL via XAMPP)
+DB_CONNECTION=mysql  
+DB_HOST=127.0.0.1  
+DB_PORT=3306  
+DB_DATABASE=trabalho  
+DB_USERNAME=root  
+DB_PASSWORD=
+
+### 5. Gerar a chave da aplicação
+php artisan key:generate
+
+### 6. Migrar e popular o banco
+php artisan migrate --seed
+
+### 7. Criar o link de armazenamento
+php artisan storage:link
+
+### 8. Rodar o servidor
+php artisan serve
+
+Acesse: http://127.0.0.1:8000
+
+---
+
+## 🔐 Credenciais do Administrador
+
+Email: admin@example.com  
+Senha: senha123
+
+---
+
+## 🧭 Como acessar o painel administrativo
+
+URLs úteis:
+
+- Criar modelo: http://127.0.0.1:8000/admin/car-models/create  
+- Criar marca: http://127.0.0.1:8000/admin/brands/create  
+- Painel veículos: http://127.0.0.1:8000/admin/vehicles  
+
+---
+
+## 🖼️ Prints do Sistema
+
+As imagens estão na pasta `/prints` do repositório:
+
+- prints/home.png — Página inicial pública  
+- prints/lista-veiculos.png — Listagem pública  
+- prints/detalhes.png — Detalhes do veículo  
+- prints/admin-login.png — Tela de login  
+- prints/admin-veiculos-index.png — Lista de veículos  
+- prints/admin-editar-veiculo.png — Edição de veículo  
+- prints/admin-brands-create.png — Cadastro de marcas  
+- prints/admin-car-models-create.png — Cadastro de modelos  
+
+
+---
+
+## 👨‍💻 Desenvolvido por
+Miguel Ângelo Ruiz ABel
+
+
+
+
+---
+
+## 👨‍💻 Desenvolvido por
+Miguel
