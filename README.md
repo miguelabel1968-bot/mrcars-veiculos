@@ -86,8 +86,7 @@ As imagens estão na pasta `/prints` do repositório:
 
 - prints/car models create.png — Criar modelo
 
-### Exemplo exibindo imagem no README:
-![Home](prints/home.png)
+
 
 ---
 
